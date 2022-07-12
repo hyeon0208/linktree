@@ -4,19 +4,28 @@
 		<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="르탄이 - 프로필 링크">
-    <meta property="og:description" content="어서와 코딩은 처음이지?">
+    <meta property="og:title" content="서현준 - 프로필 링크">
+    <meta property="og:description" content="어서와 개발은 처음이지?">
     <meta property="og:image" content="공유할 이미지">
     <script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free/sparta.js"></script>
     <title>르탄이 - 프로필 링크</title>
     <style>
+
+        /* 글꼴 넣는 코드  */
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        * {
+            font-family: "Pretendard",serif;
+        }
+
+        /* 태그가 유일한 1개 라면 class를 지정하지 않고 바로 사용해도됨.  */
         body {
             background-color: #86f0d0;
         }
+
         .profile {
             width: 100px;
             height: 100px;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(228, 250, 249);
             border-radius: 100%;   /* 경계-반지름 생성 100으로 갈 수록 원형이됨.  */
 
             border: 3px solid rgb(24, 2, 2); /* border에 선 추가 */
@@ -47,12 +56,45 @@
             width: 300px;
             margin: 50px auto 0 auto; 
 
+            /* 구역 안의 내용물을 움직이기 위한 display flex 코드 (4줄이 붙어 다님)  
+               내용물을 가운데로 옮기는 코드로 구성됨 */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             
         } 
+
+        /* 오른쪽화살괄호 > 를 사용하면 first-div로 이름붙인 div안에 모든 a 태그에 적용  */
+        .first-div > a {
+            width: 300px;
+            height: 50px;
+            font-weight: bolder;
+
+            background-color: rgb(228, 250, 249);
+            border-radius: 10px;
+
+            margin-bottom: 10px;
+
+            /* 내용물을 가운데로 옮기는 display flex 코드 (4줄이 붙어 다님)  */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            /* a 태그에 자동으로 들어가 있는 텍스트 밑의 줄을 제거 해줌 */
+            text-decoration: none;
+
+            /* 박스에 그림자 효과 추가 : 가로 세로 넓기 선명도*/
+            box-shadow: 4px 4px 8px 1px black;
+        }
+
+        /* 마우스를 박스에 올리면 일어날 효과 옵션 */
+        .first-div > a:hover {
+            background-color: rgb(197, 224, 218);
+            font-size: 14px;
+            font-style: normal;
+        }
 
     </style>
 </head>
@@ -61,10 +103,10 @@
         <div class="profile"></div>
         <h1>H</h1>  <!--본 제목 ( 제목 1)--> 
         <p>안녕하세요</p> <!-- 제목의 문단 --> 
-        <a target="_blank" href="https://spartacodingclub.kr/">Github</a>
-        <a target="_blank" href="https://hanghae99.spartacodingclub.kr/">Notion</a>
-        <a target="_blank" href="https://chang.spartacodingclub.kr/">Instagram</a>
-        <a target="_blank" href="https://ddingdong.spartacodingclub.kr/">띵동코딩</a>
+        <a target="_blank" href="https://github.com/SuhHyeonjun">Github</a>
+        <a target="_blank" href="https://hstory0208.notion.site/About-Me-5ed9944db468458aa3d00e5f7f5ee290">Notion</a>
+        <a target="_blank" href="https://www.instagram.com/hye0__n/">Instagram</a>
+        
     </div> 
 
 </body>
