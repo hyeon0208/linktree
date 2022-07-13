@@ -7,19 +7,19 @@
     <meta property="og:title" content="서현준 - 프로필 링크">
     <meta property="og:description" content="Linktree">
     <meta property="og:image" content="./Devops/H로고.png">
-    <script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free/sparta.js"></script>
-    <title>르탄이 - 프로필 링크</title>
+    <!-- <script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free/sparta.js"></script> -->
+    <title>서현준 - 프로필 링크</title>
     <style>
 
         /* 글꼴 넣는 코드  */
-        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Source+Code+Pro:ital,wght@1,500&display=swap');
         * {
-            font-family: "Pretendard",serif;
+            font-family: 'Fira Sans Condensed', sans-serif;
         }
 
         /* 태그가 유일한 1개 라면 class를 지정하지 않고 바로 사용해도됨.  */
         body {
-            background-color: #86f0d0;
+            background-color: #c2f3e0;
         }
 
         .profile {
@@ -28,9 +28,9 @@
             background-color: rgb(228, 250, 249);
             border-radius: 100%;   /* 경계-반지름 생성 100으로 갈 수록 원형이됨.  */
 
-            border: 3px solid rgb(24, 2, 2); /* border에 선 추가 */
+            border: 3px solid rgb(225, 228, 214); /* border에 선 추가 */
 
-            background-image: url('./Devops/H로고.png');     /* 이 세줄은 항상 붙어다님 */
+            background-image: url('./profile\ image.jpg');     /* 이 세줄은 항상 붙어다님 */
             background-position: center;
             background-size: cover;
         }
@@ -50,6 +50,8 @@
             font-size: 14px;
 
             margin-top: 10px;
+            text-align:center; /* 문자 가운데 정렬 */
+            
         }
 
         .first-div {     
@@ -70,6 +72,7 @@
             width: 300px;
             height: 50px;
             font-weight: bolder;
+            color: rgba(1, 19, 16, 0.596);
 
             background-color: rgb(228, 250, 249);
             border-radius: 10px;
@@ -96,15 +99,48 @@
             font-style: normal;
         }
 
+        .explain {
+            background-color: rgba(248, 248, 248, 0.507);
+            background-position: center;
+            border-radius: 29px;
+            width: 210px;
+            height: 65px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+             /* 박스에 그림자 효과 추가 : 가로 세로 넓기 선명도*/
+             box-shadow: 1px 1px 6px 1px rgb(225, 228, 214);
+        }
+
+        p {
+            color: black;
+            font-weight: bolder;
+        }
+
     </style>
 </head>
 <body>
     <div class="first-div">        <!--구역 나누기--> 
         <div class="profile"></div>
-        <h1>H</h1>  <!--본 제목 ( 제목 1)--> 
-        <p>안녕하세요</p> <!-- 제목의 문단 --> 
+        <h1>H</h1>  <!--본 제목 ( 제목 1)--> <br>
+            <div class="explain">
+        <h5>
+            ✔ MBTI    ➖ ESTJ<br>
+            ✔ 나이    ➖ 19960208<br>
+            ✔ 이름    ➖ Suh Hyeon jun
+        </h5>
+            </div> <br>
+
+        
+        <p>🏃‍♂ Activities 🏃‍♂
+            <br>
+        </p> <!-- 제목의 문단 --> <br>
         <a target="_blank" href="https://github.com/SuhHyeonjun">Github</a>
         <a target="_blank" href="https://hstory0208.notion.site/About-Me-5ed9944db468458aa3d00e5f7f5ee290">Notion</a>
+        <a target="_blank" href="https://hstory0208.notion.site/Do-H-33570ca9f5f14fb09bd3989bee72768a">Dev Note</a>
         <a target="_blank" href="https://www.instagram.com/hye0__n/">Instagram</a>
         
     </div> 
